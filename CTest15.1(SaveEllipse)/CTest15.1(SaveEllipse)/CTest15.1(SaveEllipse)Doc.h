@@ -1,20 +1,20 @@
 
-// CTest13.2(DragEllipse)Doc.h : CCTest132DragEllipseDoc 类的接口
+// CTest15.1(SaveEllipse)Doc.h : CCTest151SaveEllipseDoc 类的接口
 //
 
 
 #pragma once
 
 
-class CCTest132DragEllipseDoc : public CDocument
+class CCTest151SaveEllipseDoc : public CDocument
 {
 protected: // 仅从序列化创建
-	CCTest132DragEllipseDoc();
-	DECLARE_DYNCREATE(CCTest132DragEllipseDoc)
+	CCTest151SaveEllipseDoc();
+	DECLARE_DYNCREATE(CCTest151SaveEllipseDoc)
 
 // 特性
 public:
-	
+	CArray<CRect, CRect> ary;
 // 操作
 public:
 
@@ -29,7 +29,7 @@ public:
 
 // 实现
 public:
-	virtual ~CCTest132DragEllipseDoc();
+	virtual ~CCTest151SaveEllipseDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;

@@ -101,6 +101,8 @@ void CCTest132DragEllipseView::OnLButtonUp(UINT nFlags, CPoint point)
 {
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	flag = false;
+	r.SetRect(p1, p2);
+	pDoc->
 	CView::OnLButtonUp(nFlags, point);
 }
 
