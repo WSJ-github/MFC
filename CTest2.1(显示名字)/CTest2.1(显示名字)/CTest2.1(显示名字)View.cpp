@@ -53,9 +53,11 @@ void CCTest21显示名字View::OnDraw(CDC* pDC)
 	if (!pDoc)
 		return;
 	CString A  ;
+	CString r;
 	A.Format(_T("%d"), pDoc->a);
 	pDC->TextOutW(200, 200,pDoc->s);
 	pDC->TextOutW(200, 300, A);
+	
 	// TODO: 在此处为本机数据添加绘制代码
 }
 
